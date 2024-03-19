@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+   font-weight: bold;
+   transition: color .3s ease-in-out, box-shadow .2s ease-in-out;
+
+}
+nav ul li a:hover {
+    box-shadow: inset 150px  0 0 #0873e6b0;
+    color: white;
+    border-radius: 20px;
+  }
+
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('kr.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #fff;
+    font-size: 26pt; 
+}
+span:before{
+    content:'';
+    animation: animate infinite 10s;
+   
+}
+@keyframes animate{
+    0%{
+        content: 'Front-end developer';
+        color: red;
+        font-size: 20pt;
+    }
+    25%{
+        content: 'Designer';
+        color: red;
+        
+    }
+    50%{
+        content: 'Traveller';
+        color: red;
+    }
+    75%{
+        content: 'Photographer';
+        color: red;
+    }
+    100%{
+        content: 'Etc.';
+        color: rgb(250, 4, 4);
+    }   
+}
+ /* paste yeha hai */
+ .about-section  h2{
+    display: inline;
+    font-size: 30pt;
+    border-bottom: 2px solid #0873e6b0;
+}
+.about-section p{
+    text-wrap: wrap;
+    width:25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-section h2{
+  
+    font-size: 30pt;
+    display: inline;
+    border-bottom: 2px solid#0873e6b0;
+    /* padding-bottom: 5px; */
+   
+}
+.contact-section p{
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* .message{
+    height: 100px;
+    width: 20%;
+ margin-left: 20px;
+
+   
+} */
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    /* background-image: url('kr.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  form ma bg image rakhda*/
+
+label {
+    /* color: #f9f9f9; form ma bg image rakhda*/ 
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
